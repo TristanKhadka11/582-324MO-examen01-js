@@ -2,7 +2,12 @@
 
 À partir de la structure de base, vous devez créer à l'identique le quiz présenté dans la vidéo ci-dessous en écrivant uniquement du JavaScript.
 
-[Aperçu du résultat](https://youtu.be/T2sXp6Aogyg)
+
+
+https://github.com/jfcmontmorency/582-324MO-examen01-js/assets/142059735/cc851cfb-72c4-4a1d-a51b-38d076932b58
+
+
+[YouTube](https://youtu.be/T2sXp6Aogyg)
 
 ## Précisions
 
