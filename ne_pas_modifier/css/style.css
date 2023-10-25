@@ -1,0 +1,148 @@
+/*
+███╗   ██╗███████╗
+████╗  ██║██╔════╝
+██╔██╗ ██║█████╗
+██║╚██╗██║██╔══╝
+██║ ╚████║███████╗
+╚═╝  ╚═══╝╚══════╝
+
+██████╗  █████╗ ███████╗
+██╔══██╗██╔══██╗██╔════╝
+██████╔╝███████║███████╗
+██╔═══╝ ██╔══██║╚════██║
+██║     ██║  ██║███████║
+╚═╝     ╚═╝  ╚═╝╚══════╝
+
+███╗   ███╗ ██████╗ ██████╗ ██╗███████╗██╗███████╗██████╗
+████╗ ████║██╔═══██╗██╔══██╗██║██╔════╝██║██╔════╝██╔══██╗
+██╔████╔██║██║   ██║██║  ██║██║█████╗  ██║█████╗  ██████╔╝
+██║╚██╔╝██║██║   ██║██║  ██║██║██╔══╝  ██║██╔══╝  ██╔══██╗
+██║ ╚═╝ ██║╚██████╔╝██████╔╝██║██║     ██║███████╗██║  ██║
+╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ */
+
+:root {
+  --default-bg-color: #12082c;
+  --default-color: #2d1288;
+  --positif-bg-color: #042100;
+  --positif-color: darkgreen;
+  --negatif-bg-color: #410200;
+  --negatif-color: darkred;
+}
+
+body {
+  background-color: var(--default-bg-color);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+body.good {
+  background: var(--positif-bg-color);
+}
+
+body.bad {
+  background: var(--negatif-bg-color);
+}
+
+h1 {
+  max-width: 75%;
+  margin: 1rem auto 3rem;
+}
+
+svg {
+  fill: var(--default-color);
+  width: 50px;
+  height: 50px;
+}
+
+body.good svg {
+  fill: var(--positif-color);
+}
+
+body.bad svg {
+  fill: var(--negatif-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Wrapper */
+
+.jeu {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Choix */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.66rem;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+#choix {
+  display: flex;
+}
+
+#choix > div {
+  padding: 1rem;
+  border-radius: 0.66rem;
+  cursor: pointer;
+  transition: background-color 0.33s;
+}
+
+#choix > div:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#choix > div.choisi {
+  background-color: var(--default-color);
+}
+
+body.good #choix > div.choisi {
+  background-color: var(--positif-color);
+}
+
+body.bad #choix > div.choisi {
+  background-color: var(--negatif-color);
+}
+
+/* Réponse */
+
+#reponse {
+  margin: 2rem 0;
+  font-size: 25px;
+}
+
+/* Boutons */
+
+#bouton {
+  margin: 2rem 0;
+}
+
+body.validated #bouton {
+  display: none;
+}
+
+button {
+  background-color: var(--default-bg-color);
+  border-radius: 0.66rem;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  box-shadow: 0 0 0 3px var(--default-color);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #2d1288;
+}
